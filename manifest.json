@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "VTEX Sessão Única",
+  "version": "0.1.0",
+  "description": "Reaproveita o login do admin VTEX (VtexIdclientAutCookie) em workspaces, vtexcommercestable e Master Data v1 da mesma conta.",
+  "minimum_chrome_version": "116",
+  "permissions": ["cookies", "storage", "webNavigation"],
+  "host_permissions": [
+    "https://*.myvtex.com/*",
+    "https://*.vtexcommercestable.com.br/*",
+    "https://*.vtexcrm.com.br/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "VTEX Sessão Única"
+  }
+}
