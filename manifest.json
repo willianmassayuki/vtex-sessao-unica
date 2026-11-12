@@ -17,5 +17,10 @@
   "action": {
     "default_popup": "popup.html",
     "default_title": "VTEX Sessão Única"
+  },
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
   }
 }
